@@ -59,7 +59,7 @@ public class Main : MonoBehaviour
         // 也可以使用Input.GetAxis("Mouse Y")来控制相机的俯仰角
         if (Input.GetMouseButton(0))
         {
-            mainCamera.transform.Rotate(Vector3.right, Input.GetAxis("Mouse Y"));
+            mainCamera.transform.Rotate(Vector3.back, Input.GetAxis("Mouse Z"));
         }
         // 触摸屏幕旋转相机
         if (Input.touchCount > 0)
